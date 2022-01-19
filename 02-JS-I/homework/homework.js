@@ -62,8 +62,9 @@ function sonIguales(x, y) {
   // Tu código:
   if (x ===y) {
     return true
+  } else {
+     return false 
   }
-  else return false 
 }
 
 function tienenMismaLongitud(str1, str2) {
@@ -89,7 +90,7 @@ function menosQueNoventa(num) {
 }
 
 function mayorQueCincuenta(num) {
-  // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
+  // Devue´¿lve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
   if ( num > 50) {
@@ -234,10 +235,7 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
- if(letra.length>1){
-   return 'Dato incorrecto'
- } 
- else if(letra=='a'||letra=='e'||letra=='i'||letra=='o'||letra=='u'){
+ if(letra=='a'||letra=='e'||letra=='i'||letra=='o'||letra=='u'){
    return 'Es vocal'
  }
  else{
