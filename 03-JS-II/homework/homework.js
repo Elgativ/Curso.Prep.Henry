@@ -31,9 +31,9 @@ function conection(status) {
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
-  if(status===1){
+  if(status==1){
     return 'Online'
-  } else if(status===2){
+  } else if(status==2){
     return 'Away'
   } else{
     return 'Offline'
@@ -96,7 +96,7 @@ function esDiezOCinco(numero) {
 function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
-  // Tu código:
+  // Tu código:fv
   if(numero>20&&numero<50){
     return true
   }else{
@@ -112,6 +112,7 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
+  // 5.7          5
   if(numero===Math.floor(numero)){
   return true
   }else{
@@ -126,10 +127,9 @@ function fizzBuzz(numero) {
   // De lo contrario, devuelve el numero
   if(numero%3===0 && numero%5===0){
     return "fizzbuzz"
-    }
-    else if (numero%3===0){
-      return "fizz"}
-    else if(numero%5===0){
+    }else if (numero%3===0){
+      return "fizz"
+    }else if(numero%5===0){
       return "buzz"}
       return numero
     }
@@ -170,6 +170,7 @@ function esPrimo(numero) {
   return true;
 }
 
+
 function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
@@ -195,7 +196,8 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  if (numero >= 99 && numero <=1000 ){
+  //
+  if (numero > 99 && numero <1000 ){
     return true
   } else{
     return false
